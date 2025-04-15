@@ -1,0 +1,205 @@
+/* ##### ARA CSS FILE ##### */
+
+
+/* GENERAL STYLE */
+
+	@font-face {								/*Sets the site to read the custom font file*/
+		font-family: 'Charm-Regular';
+		src: url(Charm-Regular.ttf);
+		font-weight: normal;
+		font-style: normal; }
+
+	body {									/*Sets the body font and appearance*/
+		font-family: "verdana", arial, sans-serif;
+		font-size: 12px;
+		color: white;
+		line-height: 1.5;
+		margin: 0;
+		padding: 0;
+		background: url(images/avongorge.jpg);				/*Sets and positions the background image*/
+		background-position: center;
+		background-size: cover; }
+
+	h1, h2 {								/*Sets the heading fonts*/
+		font-family: "Charm-Regular", garamond, serif;
+		font-weight: normal; }
+
+	h1 {									/*Moved offscreen and replaced with a banner*/
+		font-size: 250%;
+		text-align: center; }
+	h2 {									/*Used as the main heading*/
+		font-size: 250%; 
+		text-align: center; }
+	h6 {									/*Used for image captions*/
+		font-size: 80%;
+		text-align: center;
+		margin-top: -5px;
+		font-weight: normal; }
+
+	p, h1, h2, ol, ul {							/*Sets the margins for content*/
+		margin-top: 0;
+		margin-bottom: 1px; }
+
+	p {									/*Indents paragraphs by the set value*/
+		text-indent: 50px }
+
+	li + li {								/*Validation returns an error when using <br> tags in lists; this replicates the effect without an error*/
+		margin-top: 15px; }
+
+	ul {									/*Sets the position for unordered lists*/
+		padding-left: 0;
+		margin-left: 30px; }
+
+	img {									/*Creates a box for images*/
+		padding: 4px;
+		background-color: black; }
+
+	a {									/*Sets some appearance traits for the navigation and contact links*/
+		color: #8c5900;
+		font-weight: bold;
+		text-decoration: none;
+		border-bottom: 1px solid #898989;
+		padding-bottom: 1px; }
+
+	a:visited {
+		color: green; }
+
+	a:hover, a:focus, a:active {
+		color: red;
+		border-bottom-color: lightgreen; }
+
+
+/* WRAPPER STYLE */
+
+	div#wrapper {								/*Sets the position and appearance of the main box of content*/
+		width: 1200px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		background-color: #151720;
+		background-repeat: repeat-y;
+		background-position: left top;
+		background-attachment: scroll;
+		border: 2px solid black; }
+
+	article {								/*Sets the position of the text within the box*/
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 50px;
+		margin-bottom: 20px;
+		width: 1000px; }
+
+	article a:link {							/*Sets the appearance of links within the article. Used for the Great Hall page*/
+		color: lightgreen;
+		font-weight: normal;
+		border-bottom: none; }
+
+	article a:hover {
+		color: red;
+		background-color: transparent;
+		border: none; }
+
+	nav {									/*Sets the position of the navigation bar*/
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: -24px;
+		margin-bottom: 20px;
+		width: 1200px; }
+
+	footer {								/*Sets the position of the footer*/
+		clear: both;
+		padding: 10px;
+		font-size: 75%;
+		height: 1%;
+		text-align: center;
+		background-color: #151720;
+		color: #ffffff;
+		border-top: 1px solid #aabadd; }
+
+
+/* HEADER STYLE */
+
+	header {								/*Sets the position of the header*/
+		height: 90px;
+		margin-bottom: 20px; }
+
+	header h1, header p {							/*Removes the h1 and header p from the screen*/
+		text-indent: -99999px; }
+
+	body.home header {							/*Applies the banner at the top of the screen*/
+		background: white url(images/titlebanner.png) no-repeat; }
+
+
+/* NAVIGATION STYLE */
+
+	nav ul {								/*Helps format the navigation bar as an unordered list*/
+		list-style-type: none;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 0px;
+		padding-right: 0px;
+		border-top: none;
+		display: inline;
+		line-height: 2;
+		height: 1%; }
+
+	nav a {									/*Sets the appearance of the links within the navigation bar*/
+		display: inline;
+		background: #151720;
+		padding-left: 65px;
+		padding-right: 65px;
+		line-height: 2;
+		border-bottom-color: #aabadd;
+		height: 1%;
+		color: lightgreen; }
+
+	nav a:hover {
+		background-color: transparent;
+		color: red;
+		border-bottom-color: #aabadd; }
+
+	nav li {								/*Sets the navigation bar to appear in a line along the top of the article*/
+		display: inline; }
+
+	div.nav {
+		text-align: center; }
+
+	ul.navlist {
+		display: inline-block;
+		text-align: center; }
+
+
+/* FOOTER STYLE */
+
+	footer p { 								/*Helps set the position of the footer paragraph*/
+		margin-bottom: 0; }
+
+	footer a:link {								/*Sets the appearance of the link in the footer*/
+		color: lightgreen;
+		font-weight: normal;
+		border-bottom: none; }
+
+	footer a:hover, footer a:focus, footer a:active {
+		background-color: transparent;
+		border: none; }
+
+
+/* CHARACTER SHEET STYLE */
+
+	.column {								/*Positions the images of the character sheets so they appear in a row and centered on the page*/
+		float: left;
+		width: 30%;
+		padding: 10px; }
+
+	.row {
+		display: flex;
+		justify-content: center; }
+
+	.row::after {
+		content: "";
+		clear: both;
+		display: table; }
+
+
+/* ##### FILE END ##### */
